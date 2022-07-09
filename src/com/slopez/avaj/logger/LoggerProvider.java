@@ -51,4 +51,13 @@ public class LoggerProvider {
             System.exit(1);
         }
     }
+
+    public void closeHandle() {
+        try {
+            this.bufferedWriter.close();
+            this.fileWriter.close();
+        } catch (IOException e) {
+            System.out.println("Cannot close file handlers.");
+        }
+    }
 }

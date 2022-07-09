@@ -21,6 +21,7 @@ import com.slopez.avaj.exceptions.InvalidAircraft;
 import com.slopez.avaj.exceptions.InvalidAircraftCoordinates;
 import com.slopez.avaj.exceptions.InvalidMd5Hash;
 import com.slopez.avaj.exceptions.SimulationError;
+import com.slopez.avaj.logger.LoggerProvider;
 import com.slopez.avaj.simulator.AircraftFactory;
 import com.slopez.avaj.simulator.Flyable;
 import com.slopez.avaj.tower.WeatherTower;
@@ -89,6 +90,7 @@ public class Main {
                 }
 
                 System.out.printf("Simulation count : %d\nAircraft count : %d\n", simulationCount, flyables.size());
+                flyables.clear();
             }
 
         } catch (FileNotFoundException e) {
@@ -107,6 +109,8 @@ public class Main {
             System.out.println(e);
         } catch (SimulationError e) {
             System.out.println(e);
+        } finally {
+            LoggerProvider.getProvider().closeHandle();
         }
     }
 }
