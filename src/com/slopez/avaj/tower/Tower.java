@@ -1,7 +1,6 @@
 package com.slopez.avaj.tower;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import com.slopez.avaj.exceptions.SimulationError;
