@@ -29,6 +29,7 @@ public class Coordinates {
         this.height += coordinates.getHeight();
 
         this.height = Math.max(this.height, 0);
+        this.height = Math.min(this.height, 100);
     }
 
     public Coordinates clone() {

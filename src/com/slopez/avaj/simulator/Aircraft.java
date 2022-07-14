@@ -38,7 +38,5 @@ public class Aircraft {
 
     public void printMessage(String message) {
         LoggerProvider.getProvider().log(String.format("%s#%s(%d) : %s\n", this.type, this.name, this.id, message));
-        // System.out.printf("%s#%s(%d) : %s\n", this.type, this.name, this.id,
-        // message);
     }
 }
