@@ -46,11 +46,11 @@ public class Baloon extends Aircraft implements Flyable {
         }
 
         if (newWeather == "SUN")
-            this.printMessage("I'm gonna pop.");
+            this.printMessage("I'm gonna explode because it's too hot !");
         if (newWeather == "RAIN")
-            this.printMessage("Water slowly mouilling me.");
+            this.printMessage("They told me I could be anything, so I became a water-baloon !");
         if (newWeather == "FOG")
-            this.printMessage("I'm a big blur.");
+            this.printMessage("I'm something red, something blurry.");
         if (newWeather == "SNOW")
             this.printMessage("Death by snow snow.");
     }

@@ -27,7 +27,7 @@ public class WeatherProvider {
 
         Random rnd = new Random();
 
-        rnd.setSeed(coordinates.getLongitude() + coordinates.getLatitude() * coordinates.getHeight());
+        rnd.setSeed((coordinates.getLongitude() + coordinates.getLatitude()) * coordinates.getHeight());
 
         return rnd.nextInt(WeatherProvider.weather.length);
 

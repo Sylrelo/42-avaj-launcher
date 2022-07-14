@@ -17,12 +17,12 @@ public class Tower {
     }
 
     public void register(Flyable flyable) {
-        flyable.printMessage("Registered to WeatherTowder.");
+        flyable.printMessage("Registered to WeatherTower.");
         this.observers.add(flyable);
     }
 
     public void unregister(Flyable flyable) {
-        flyable.printMessage("Unregistered of WeatherTowder.");
+        flyable.printMessage("Unregistered of WeatherTower.");
         this.toRemove.add(flyable);
     }
 

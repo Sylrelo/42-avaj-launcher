@@ -46,11 +46,11 @@ public class JetPlane extends Aircraft implements Flyable {
         }
 
         if (newWeather == "SUN")
-            this.printMessage("I can't see anything.");
+            this.printMessage("My blade will melt !");
         if (newWeather == "RAIN")
-            this.printMessage("It's raisning men.");
+            this.printMessage("It's rainiiiiiiing men, hallelujah, it's raining meeeen");
         if (newWeather == "FOG")
-            this.printMessage("My plane don't see anything.");
+            this.printMessage("Where the f@$k am I headed ? I can't see anything !");
         if (newWeather == "SNOW")
             this.printMessage("Dang, i'm goona freeze.");
     }

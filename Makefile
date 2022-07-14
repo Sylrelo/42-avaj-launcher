@@ -1,7 +1,7 @@
 compile:
 	@echo "Compiling..."
 	@find * -name "*.java" > sources.txt
-	@javac -d bin @sources.txt
+	@javac -source 1.7 -target 1.7 -Xlint:-options -d bin @sources.txt
 
 run: compile
 	@echo "Running..."

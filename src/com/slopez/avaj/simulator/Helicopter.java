@@ -46,12 +46,12 @@ public class Helicopter extends Aircraft implements Flyable {
         }
 
         if (newWeather == "SUN")
-            this.printMessage("I can't see anything.");
+            this.printMessage("I can't see anything");
         if (newWeather == "RAIN")
-            this.printMessage("It's raisning men.");
+            this.printMessage("I'm scared of the rain");
         if (newWeather == "FOG")
-            this.printMessage("My plane don't see anything.");
+            this.printMessage("I'm gonna crash because I can't see anything");
         if (newWeather == "SNOW")
-            this.printMessage("Dang, i'm goona freeze.");
+            this.printMessage("I'm now an ice cube");
     }
 }

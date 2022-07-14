@@ -17,9 +17,10 @@ public class LoggerProvider {
         File file = new File(LoggerProvider.fileName);
 
         try {
-            if (!file.exists()) {
-                file.createNewFile();
+            if (file.exists()) {
+                file.delete();
             }
+            file.createNewFile();
         } catch (SecurityException e) {
             System.out.println("Cannot check if log file exists.");
         } catch (IOException e) {
